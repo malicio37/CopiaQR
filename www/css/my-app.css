@@ -1,0 +1,45 @@
+div[class*="col-"] {
+  background: #fff;
+  text-align: center;
+  color: #000;
+  border: 1px solid #ddd;
+  padding: 5px;
+}
+.row {
+  margin-bottom: 15px;
+}
+
+.imagPers{
+	width: 20vw;
+}
+
+.col-25 {
+    width: auto!important;
+	border: 0!important;
+}
+
+.col-20 {
+    width: auto!important;
+}
+
+.list-block select {
+    white-space: normal;
+    height: auto;
+}
+
+.item-title.label {
+    white-space: normal;
+}
+.list-block .item-title{
+      white-space: normal;
+}
+
+.list-block .item-subtitle{
+  white-space: normal;
+}
+
+a{
+    white-space: normal;
+}
+
+#map { height: 180px; }

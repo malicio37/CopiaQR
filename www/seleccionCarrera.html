@@ -1,0 +1,91 @@
+
+<!-- We don't need full layout here, because this page will be parsed with Ajax-->
+<!-- Top Navbar-->
+<div class="navbar">
+  <div class="navbar-inner">
+    <div class="center sliding">Carrera de Observación UAM®</div>
+    <div class="right">
+      <input type="submit" value="Salir" class="button  button-fill color-lightblue" href="#" onclick="signOut()"/>
+    </div>
+  </div>
+</div>
+<div class="pages">
+  <!-- Page, data-page contains page name-->
+  <div data-page="seleccionCarrera" class="page">
+    <!-- Scrollable page content-->
+    <div class="page-content">
+      <div class="content-block-title">Selección de Carrera</div>
+
+
+
+      <form id="formSeleccion" class="list-block">
+        <ul>
+          <li>
+            <div class="item-content">
+              <div class="item-media"><i class="icon icon-form-url"></i></div>
+              <div class="item-inner">
+                <div class="item-title label">Carreras inscritas</div>
+                <div class="item-input">
+                  <select name="carrerasInscritas">
+                  </select>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </form>
+      <div class="content-block">
+        <div class="row">
+          <div class="col-20">
+            <input type="submit" value="Ingresar" class="button button-big button-fill color-lightblue botonIngresar"/>
+          </div>
+        </div>
+      </div>
+
+
+
+		<div class="card">
+			<div class="card-header">Proyecto:</div>
+			<div class="card-content">
+				<div class="list-block media-list">
+					<ul>
+						<li class="item-content">
+						  <div class="item-inner">
+							<div class="item-title-row">
+								<div class="item-title">Proceso de inducción a la vida universitaria a través de una carrera de observación desde dispositivos móviles</div>
+							</div>
+							<div class="item-subtitle">Julián Mauricio Mejia Cardona</div>
+							<div class="item-subtitle">
+								<a href="http://www.autonoma.edu.co/investigacion2/unidad-de-investigacion">Grupo de Investigación Ingeniería de Software, Móviles.</a>
+							</div>
+							<div class="item-subtitle" >
+								<a href="mailto:jimezam@autonoma.edu.co">jimezam@autonoma.edu.co</a>
+							</div>
+						  </div>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="card-footer">
+				<div class="container">
+					Made by <a href="http://framework7.io/">Framework7 </a>
+				</div>
+			</div>
+		</div>
+  </div>
+  </div>
+</div>
+
+
+<!--
+ver las carreras que tiene inscritas un usuario y estan activas
+
+SELECT c.nombre FROM carrera c INNER JOIN (SELECT i.carreraId FROM inscripcion i WHERE i.usuarioMail = 'jmmejia@autonoma.edu.co')AS n ON C.id=n.carreraId ;
+
+mostrar las carreras activas que no se han inscrito aún
+
+SELECT c.nombre from carrera c WHERE c.id NOT IN (SELECT c.id FROM carrera c INNER JOIN (SELECT i.carreraId FROM inscripcion i WHERE i.usuarioMail = 'jmmejia@autonoma.edu.co')AS n ON C.id=n.carreraId);
+
+
+-->

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2014 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+<!--        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+-->
+		    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+        <link rel="stylesheet" href="css/framework7.ios.min.css">
+    		<link rel="stylesheet" href="css/framework7.ios.colors.min.css">
+    		<link rel="stylesheet" href="css/leaflet.css" />
+    		<link rel="stylesheet" href="css/my-app.css">
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+	      <title>Carrera de Observación UAM®</title>
+    </head>
+    <body>
+      <!-- Views-->
+          <div class="views">
+      	<!-- Your main view, should have "view-main" class-->
+      		<div class="view view-main">
+      			<!-- Top Navbar-->
+      			<div class="navbar">
+      				<div class="navbar-inner">
+      				<!-- We have home navbar without left link-->
+      					<div class="center sliding" >Carrera de Observación UAM®</div>
+      					<div class="right">
+      						<a href="about.html" class="item-link">
+      							<div class="item-content">
+      								<div class="item-inner">
+      									<div class="item-title">Acerca de</div>
+      								</div>
+      							</div>
+      						</a>
+      					</div>
+      				</div>
+      			</div>
+      			<!-- Pages, because we need fixed-through navbar and toolbar, it has additional appropriate classes-->
+      			<div class="pages navbar-through toolbar-through">
+      				<!-- Page, data-page contains page name-->
+      				<div data-page="index" class="page">
+      					<!-- Scrollable page content-->
+      					<div class="page-content">
+      						<!-- <div class="content-block-title">Bienvenido a Carrera de Observación UAM®</div> -->
+      						<div class="content-block">
+      							<div class="content-block-inner">
+      								<!-- <p>Haz clic para iniciar</p> -->
+      								<div class="content-block">
+      									<div class="row">
+
+      										<div><a  href="index2.html" class="button button-big button-fill color-lightblue">Ingresar a Carrera de Observación</a></div>
+      										<!--
+
+      										<div><a  href="principal.html" class="button button-big button-fill color-lightblue">Ingresar a Carrera de Observación</a></div>
+      										-->
+      									</div>
+      								</div>
+      							</div>
+      						</div>
+      						<div class="card">
+      							<div class="card-header">Proyecto:</div>
+      							<div class="card-content">
+      								<div class="list-block media-list">
+      									<ul>
+      										<li class="item-content">
+      											<div class="item-inner">
+      												<div class="item-title-row">
+      													<div class="item-title">Proceso de inducción a la vida universitaria a través de una carrera de observación desde dispositivos móviles</div>
+      												</div>
+      												<div class="item-subtitle">Julián Mauricio Mejia Cardona</div>
+      												<div class="item-subtitle">
+      													<a href="http://www.autonoma.edu.co/investigacion2/unidad-de-investigacion" >Grupo de Investigación Ingeniería de Software, Móviles.</a>
+      												</div>
+      												<div class="item-subtitle" >
+      													<a href="mailto:jimezam@autonoma.edu.co">jimezam@autonoma.edu.co</a>
+      												</div>
+      											</div>
+      										</li>
+      										...
+      									</ul>
+      								</div>
+      							</div>
+      							<div class="card-footer">
+      								<div class="container">
+      									Made by <a href="http://framework7.io/">Framework7 </a>
+      								</div>
+      							</div>
+      						</div>
+
+
+
+      					</div>
+      				</div>
+      			</div>
+
+      		</div>
+      	</div>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/framework7.min.js"></script>
+        <!-- Path to your app js-->
+    		<script type="text/javascript" src="js/leaflet.js"></script>
+        <script type="text/javascript" src="js/my-app.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>
